@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../styles/GeneralStyles.css">
+    <link rel="stylesheet" href="../../styles/OrderingPortal/General.css">
+    <link rel="stylesheet" href="../../styles/OrderingPortal/SystemAdminProfile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="content__wrapper" id="main__content">
+    <div class="dialog">
+        <div class="dialog__content">
+
+        </div>
+    </div>
+    <div class="menu">
+        <img style="width: 72px" src="../../src/OrderingPortal/LogoSmall.png" alt="">
+        <div class="leave">
+
+            <img src="../../src/SystemAdmin/Button-leave.png" alt="" id="leaveAccount">
+            <div class="tooltip__wrapper" id="tooltipLeave" style="top: 50%; transform: translateY(calc(-50% - 5px))">
+                <div class="info__menu">
+                    <div class="menu__triangle">
+
+                    </div>
+                    <div class="menu__name">
+                        <p>Sign out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content__search__header">
+            <div class="header__left">
+                <input type="text" placeholder="Search for anything">
+                <img src="../../src/SystemAdmin/Search.png" alt="">
+            </div>
+            <div class="header__right">
+                <div class="right__buttons">
+                    <div class="notifications">
+                        <div class="notification__off"></div>
+                        <img src="../../src/SystemAdmin/Notifications.png" alt="">
+                    </div>
+                    <div class="language">
+                        <img src="../../src/SystemAdmin/flagEn.png" alt="" id="flagEn">
+                        <img src="../../src/SystemAdmin/flagNor.png" alt="" id="flagNor">
+                        <div class="language__select">
+                            <div class="language__section" id="langEn">
+                                <img src="../../src/SystemAdmin/flagEn.png" alt="">
+                                <p>English</p>
+                            </div>
+                            <div class="language__section" id="langNor">
+                                <img src="../../src/SystemAdmin/flagNor.png" alt="">
+                                <p>Norwegian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__profile">
+                    <div class="profile__textarea">
+                        <h3>Brooklyn Simmons</h3>
+                        <p>View Profile</p>
+                    </div>
+                    <div class="profile__picture">
+                        <div class="img__profile">
+
+                        </div>
+                        <div class="profile__online">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content__inner" style="margin-top: 32px; align-items: flex-start; justify-content: unset">
+            <div class="edit__profile">
+                <h2>Edit Profile</h2>
+                <div class="form__edit">
+                    <div class="input__wrapper">
+                        <input type="text" id="nameProfile">
+                        <p>Name</p>
+                    </div>
+                    <div class="profile__pic__change">
+                        <div id="profileImage"></div>
+                        <label for="photo-upload">Change Photo</label>
+                        <input type="file" id="photo-upload">
+                    </div>
+                </div>
+                <button id="saveProfile">Save</button>
+            </div>
+            <div class="change__pass__pin">
+                <div class="change__pass">
+                    <h2>Change Password</h2>
+                    <div class="change__form">
+                        <div class="input__wrapper">
+                            <input type="text" id="oldPass">
+                            <p>Old Password</p>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" id="newPass">
+                            <p>New Password</p>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" id="confirmPass">
+                            <p>Confirm Password</p>
+                        </div>
+                    </div>
+                    <button id="savePass">Save</button>
+                </div>
+                <div class="change__pin">
+                    <h2>Change PIN</h2>
+                    <div class="change__form">
+                        <div class="input__wrapper">
+                            <input type="text" id="oldPin">
+                            <p>Old PIN</p>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" id="newPin">
+                            <p>New PIN</p>
+                        </div>
+                        <div class="input__wrapper">
+                            <input type="text" id="confirmPin">
+                            <p>Confirm PIN</p>
+                        </div>
+                    </div>
+                    <button id="savePin">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../scripts/storage.js"></script>
+<script src="../../scripts/OrderingPortal/SystemAdminProfile.js"></script>
+</body>
+</html>

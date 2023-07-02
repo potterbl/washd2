@@ -1,0 +1,27 @@
+.content{
+    background-color: #3082F7 !important;
+}
+.notification__button{
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    position: relative;
+}
+.notifications{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 13px;
+    top: 10px;
+    background: #E53935;
+    border-radius: 5rem;
+    display: none;
+}
+.notifications__on{
+    display: block;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/OrderingPortal/OrderingPortal.css">
+    <link rel="stylesheet" href="./styles/OrderingPortal/General.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Ordering Portal</title>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+
+        </div>
+        <div class="right">
+            <img src="./src/OrderingPortal/Logo.png" alt="" class="logo">
+            <div class="login__form">
+                <div class="input__wrapper">
+                    <input type="text" id="emailUsernameInput">
+                    <p>Email / Username</p>
+                </div>
+                <div class="input__wrapper">
+                    <input type="text" id="passwordInput">
+                    <p>Password</p>
+                </div>
+            </div>
+            <button id="logInButton">LOG IN</button>
+        </div>
+        <div class="language__section">
+            <img src="./src/OrderingPortal/flagNor.png" alt="" id="flagNor">
+            <img src="./src/OrderingPortal/flagEn.png" alt="" id="flagEn">
+            <div class="active__lang"></div>
+        </div>
+    </div>
+    <script src="./scripts/OrderingPortal/OrderingPortal.js"></script>
+    <script src="./scripts/storage.js"></script>
+</body>
+</html>

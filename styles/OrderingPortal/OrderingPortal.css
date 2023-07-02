@@ -1,0 +1,57 @@
+.left{
+    width: 700px;
+    height: 100%;
+    background-image: url('../../src/OrderingPortal/BG.png');
+    background-position: left center;
+    background-size: cover;
+}
+.right{
+    width: calc(100% - 700px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo{
+    margin-bottom: 96px;
+}
+.login__form{
+    display: grid;
+    row-gap: 16px;
+}
+.right button{
+    width: 400px;
+    height: 60px;
+    background: #3082F7;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: 0;
+    margin-top: 40px;
+}
+.language__section {
+    position: absolute;
+    top: 32px;
+    right: 64px;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    height: 44px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.active__lang{
+    background: rgba(112, 182, 246, 0.24);
+    border-radius: 8px;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-in;
+}
